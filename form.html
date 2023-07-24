@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Join Us</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <img class="logo" src="./img/SaveEarth.png" alt="" />
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" target="_blank">About Us</a></li>
+          <li><a href="projects.html" target="_blank">Projects</a></li>
+        </ul>
+      </div>
+      <a class="button" href="form.html"><button>Join Us</button></a>
+    </nav>
+    <!-- end navbar -->
+    <!-- modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <img src="./img/email.png" alt="" />
+        <h2>email submitted</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam!.</p>
+        <button type="button" class="closeBtn">OK</button>
+      </div>
+    </div>
+    <!-- end modal -->
+    <!-- form -->
+    <section id="form" class="form">
+      <div class="email-box">
+        <h1>Join Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ratione.</p>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="name" class="name" placeholder="enter your name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" class="email" placeholder="enter your email" />
+          </div>
+        </form>
+        <button type="submit" id="openBtn">send email</button>
+      </div>
+    </section>
+    <!-- end form -->
+
+    <script>
+      var modal = document.getElementById("myModal");
+      var open = document.getElementById("openBtn");
+      var close = document.getElementsByClassName("closeBtn")[0];
+      open.onclick = function () {
+        modal.style.display = "block";
+      };
+      close.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;600;900&family=Montserrat:ital,wght@0,500;0,700;0,900;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+/* navbar */
+li,
+a,
+button {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: beige;
+  text-decoration: none;
+}
+.navbar {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom: 2px solid rgb(55, 55, 55);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+img {
+  width: 15%;
+}
+
+.navbar-links {
+  list-style: none;
+}
+
+.navbar-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navbar-links li a:hover {
+  color: aqua;
+}
+
+.navbar button {
+  margin-left: 20px;
+  padding: 8px 25px;
+  background-color: rgb(109, 160, 143);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  color: rgb(22, 22, 22);
+}
+
+/* #home */
+
+.home {
+  min-height: 700px;
+}
+
+.hero {
+  min-height: 600px;
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(28, 28, 28)), url("../img/trees.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero button {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 3px;
+  border: 2px solid #497956;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #497956;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.content {
+  padding: 100px;
+  margin: 50px;
+  color: rgb(255, 255, 255);
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+}
+
+.content h1 {
+  margin-bottom: 5px;
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+/* #about */
+
+.about {
+  min-height: 900px;
+  font-family: "Heebo", sans-serif;
+  padding: 50px 50px 0px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.abt-content {
+  background-color: #ededed;
+  color: #282828;
+  min-height: 600px;
+  margin: 10px;
+  padding: 30px 50px 30px 50px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.abt-content h1 {
+  margin: 50px 50px 40px 30px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.main-content {
+  margin-left: 30px;
+  display: flex;
+  justify-content: start;
+  text-align: left;
+}
+
+.main-content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.text {
+  margin: 0px 30px;
+}
+
+.text p {
+  font-size: 16px;
+}
+
+.text button {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #282828;
+  margin-left: 0;
+  margin-top: 15px;
+  padding: 8px 35px;
+  border: none;
+  border-radius: 3px;
+  border: 2px solid #497956;
+  cursor: pointer;
+}
+
+.text button:hover {
+  background-color: #497956;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.grid-2 {
+  margin: 30px;
+  min-height: 100px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card-2 {
+  width: 200px;
+  margin: 0;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #497956;
+}
+
+.card-2 img {
+  width: 50%;
+}
+
+/* that Did U Know thing */
+
+.facts {
+  font-family: "Heebo", sans-serif;
+  margin: 0px 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  color: white;
+  border: solid rgb(99, 139, 98);
+  border-radius: 5px;
+}
+
+.facts img {
+  width: 30%;
+  padding: 20px;
+}
+
+.text-1 {
+  padding: 15px 50px 0px 40px;
+}
+
+.text-1 h2 {
+  margin-bottom: 20px;
+}
+/* #project */
+
+.projects {
+  background-color: #ededed;
+  min-height: 600px;
+  margin: 60px;
+  padding: 30px 0px;
+  font-family: "Heebo", sans-serif;
+  color: #282828;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.projects h1 {
+  margin: 50px 30px 0px 30px;
+  padding: 0px 50px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.grid {
+  margin: 0px 25px;
+  grid-gap: 30px;
+  padding: 50px 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  border-radius: 5px;
+}
+
+.card {
+  width: 100%;
+  padding: 0;
+  background-color: #c7c7c7;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 10px 9px;
+}
+
+.card button {
+  background-color: #d1d1d1;
+  color: black;
+  margin-bottom: 15px;
+  padding: 5px 40px;
+  border: 2px solid rgba(73, 121, 86);
+  border-radius: 3px;
+}
+
+.card button:hover {
+  background-color: rgba(73, 121, 86);
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+/* form */
+
+.form {
+  padding: 90px 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/trees.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-left: 20px;
+  padding: 8px 25px;
+  background-color: rgb(109, 160, 143);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgb(22, 22, 22);
+}
+
+.email-box {
+  background-color: rgba(18, 18, 18, 0.734);
+  /* border: 2px solid #ffffff; */
+  padding: 40px;
+  margin: 0;
+  border-radius: 15px;
+  color: beige;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+}
+
+.email-box h1 {
+  padding: 5px;
+  font-size: 40px;
+}
+
+.email-box button {
+  margin-top: 0px;
+  padding: 10px 70px;
+}
+
+form {
+  padding: 30px;
+}
+
+input {
+  border: none;
+  margin: 5px;
+  padding: 8px;
+  align-items: center;
+  min-height: 40px;
+  width: 70%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: aquamarine;
+}
+
+label {
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* modal */
+
+.modal {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: none;
+}
+
+.modal-content {
+  font-family: "Heebo", sans-serif;
+  width: 30%;
+  margin: 110px auto;
+  padding: 0px 12px 20px;
+  background-color: #e2e2e2;
+  /* box-shadow: 0px 0px 8px 2px #9c9c9c; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  line-height: 16px;
+}
+
+.modal-content img {
+  width: 50%;
+}
+
+.modal-content button {
+  margin: 15px 0px 0px 0px;
+  /* top-right-bottom-left */
+  padding: 8px 80px;
+  border-radius: 5px;
+}
+
+.modal-content h2 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+footer {
+  padding: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/trees.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+footer img {
+  width: 14px;
+}
